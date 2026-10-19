@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#075178">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="الحور كلين شركة تنظيف بابها وخميس مشيط لتنظيف المنازل والشقق والفلل والمجالس والمفروشات والتنظيف العميق. واتساب أو اتصال 0532483014.">
+  <meta name="description" content="الحور كلين شركة تنظيف بابها وخميس مشيط لتنظيف المنازل والشقق والفلل والمجالس والمفروشات والتنظيف العميق. واتساب أو اتصال 0575680262.">
   <title>شركة تنظيف بابها وخميس مشيط | تنظيف منازل وشقق وفلل | الحور كلين</title>
   <link rel="preconnect" href="https://wa.me">
   <link rel="canonical" href="https://hoor-clean.github.io/cleaning/">
@@ -23,15 +23,25 @@
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
   <script>
   function gtag_report_conversion(url) {
+    var opened = false;
     var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
+      if (opened) return;
+      opened = true;
+      if (typeof url !== 'undefined' && url) window.location.href = url;
     };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-18436564167/iPkKCPrPxfUcEMfJntdE',
-        'event_callback': callback
-    });
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18436564167/iPkKCPrPxfUcEMfJntdE',
+          'event_callback': callback
+        });
+      } else {
+        callback();
+      }
+    } catch (err) {
+      callback();
+    }
+    setTimeout(callback, 900);
     return false;
   }
   </script>
@@ -149,7 +159,7 @@
   "@context":"https://schema.org",
   "@type":"HomeAndConstructionBusiness",
   "name":"الحور كلين",
-  "telephone":"+966532483014",
+  "telephone":"+966575680262",
   "areaServed":[
     {"@type":"City","name":"Abha"},
     {"@type":"City","name":"Khamis Mushait"}
@@ -170,7 +180,7 @@
 <header class="topbar">
   <div class="wrap topbar-in">
     <div class="brand"><img src="data:image/webp;base64,UklGRhgkAABXRUJQVlA4IAwkAADQpwCdASqkAaQBPnk8m0mko6KiI3NpOJAPCWNu/E8sXdJAa7gZDTGD4U+b/GfbV7xdm/y39p84HZ/215cHOX6O9o3+k/W73Kfp72BP6j0G/3h9QH7k+rp/wPVT/dfUX/tP/V6zf/LepZ0vH90/8vB39K/1t/sfgW/df9L3Hfsf89+XvM+3c+jH8h+/H7H+8elH/Q8HfmP/peoR+R/y7/T/mX/a+MEAB+X/2P/d/4fx9/9X+++rfiAf0L+5f9HyyPDR9V/YD4Bf5t/oPVt/yP2z9Df53/qv/l/rfgN/nf9666ItIvzkvqbmM11yqvx+DfaL85NYE5+D3iEM/rF70fHUXGHWv2K+Ohno3wQUh/dQSZgsIwbcpyYELiCvgjAn/V6GbhmYZAZ6DL3k44J+AEwl1x8qoAKwFkIpj5neGVC88L3PKHJecHM/MnsBDWbW3nvpLN+0afMPLxbwSkFcHqY8Wrfzii9cKydM0VnhFtddnmRJ68Anc0b8N02p8v7RPqYmzb7mYoLIrTzckQ7O58CdE5OfRrASUNnfFwHk29mcW1aPfkcFXvD/TcumrneikWhK8up3NIiMMRMONevjLj42nNV8UAs+88ypGCZkV02Uov580eLsyCESdHs8BLAE5GE5WEUhczfTnOcOZ/Hk24gZlIY0lNj//9Q8c79za9jJfrvUUz26dv/Dn6lqOWTSvWhZDOEnTzoJ6eeqM1CbapJmP8YrokXkzzctH/+KpE2QUnkM+MqCtJS5ZXJfPbqNWcm29r5tat56ApuIWFC+7W5knED7k9VeMkGYzfvKD1OjNM5brJZ4cPfwb+e3EFL78+vTyLFv1PpDYTfdz2UPLY1EAtBzk1FqrHm1kc7k6BOlXIss+NHH1TwbRyMnT00pTAcPxu/3scqzr09mpWw0Xxzy5bm2gOK/86N+518NfdzM9JSUX3XADpT8U5TRRb403qEnRbZvq7Fz2+E+9FbpxMaeKZpfwR5Ga5lJv6TEy33soZI/Fw4ijFpQRfZwy/zmEif/92zLBZvhx0+YXAwV1IbaHiOB6a5DrheGaiV51VeLVA/no+TStqfJOWn9U/5J05IWBlUEDTqWOAaa97eMsuRJu5efiembcpSEOiryJWdpBu911wpf4moJ+PmijF1Q2lNykTtZMT5CXqJF1InnXdE7gjvTyZqpHXFT7PLkdaSywlkhb2ze/sEd22JbnAzjG1sp9GFguq3YFBA1ncRPbGLOUhOzzS88sgBrX1AyCPtHZL4gWbCXXDEn1JBxwmje3AH8kKJxrxI17DS7OIjDYQzezp/2NJYmXdKkyCsmiFmQAzVZMzKxqQYGtsDCqcXBwm83y2RSe8xPIf85vqy9D8Aw4VXltACxpbGXKgB2+hM3knRIejS19yqSC/62z+xAqz2DDXN2Eelmy3QZqisscTUqXVgnoHF+2iqccDZ6ihe1Q8ePewdOcThe3TimVGnHls5tbbz6Qkgy11meDh/fLS/LGYRLJcHXCCpHXsMRly7v8HnEfPXyp8VtHzU6cZFMT/DCH92iQ71Krg8RaVWqDJAjtJzg+TExLs33Uheb0NDcT+/hMWgUX69HNhQtf6NZgTznfh6AabVTHkfN4kB22TYo8R+A8bVwHLIJ8g13S4NH5ZjCwpFMEDRcYVo2w6U1zqA+b32sqmELeXJsBeqC17Qc1IB7XjweY4STRMZsL2cnKyAc81XNsgRlCF7Qj5aETr/adPKOImbqyj8b9llUci3gh7Yh0hQCXLOBa3bU+YEwvXEiW66i20hro5dNRyN+y/TqTo6dC+8QAP7xkweoIbBPUteaSGdVwxlj7SAE1u2ew252tV+ukpFp70lc6yFZqgSfDYwLlWeP6Il15MGUgU31BEuxNua7SbhPTwCNKpuhKFjDKu/dk/fFg60nFOAmACK+ZREuuq/rI93fQMlE+xQR5pdumCfAXwOSLo4jBYs3ufXl0Kw8kRZlZTGTmmlPbvdVSYK9WlSM3vfLaOOSrw55yS4HhIb0HhfC+QhT15a+YgNSlJ5jEsM68Sp9lmQRbIRa14KeQgrZ9o8+avSD5xS1uny0oqjD6F0pNeMaIRsls6Rjei9zgcsg0Ain7rhsy6mEM16AQ6w7xkfE1Bq7UiwH58AecxhBB9lhweIQU4P6LKpvP9sX5uiJ65GePpMoAdtumz0/Y6Ooo3QNzY2eZ6Swjftuh8w67ytqbNY+ID2L63nYIHkrLRZSb30rGHJvrQAxoQiZwbWazTt7hjwfhBHIURZUrAMh4zPAXwWQn+rt2ZUK2GhdLiHPNaIlYf9eHG6H4/S2ojdoglIFozWpDikMJvHs61oc3r6IGb6hVEuwT1ClVav/ksJqVFFy8gS8g9+yhofaI8aM9KTywV6LV0g/93YQ/YHyr+pm5t4V7dPqg3yXqZKQDuU3RoBqHlo70TIXcz1txDuWF8pKkt9vMNMXRwQw4D4i1+v4VCrDt6ZCwyWkVTXLK1/9ZUuFNElmhLLDlyo3UA1pKbcwXKpncsawSdOCGlKIiWL1miecCy7nDGXU9gonqJlxXFLqKwN/SQAn1ZjoDlJEep8YcOJcdZir7aLwa4/MHhNE1dlQ15lVPgkQhy2u8YwHrpVbJTkql1pQ/4d4VLpbgI/nenlhe1vJzuIPfORuBeFzBHud8tFpiVwG92oR5U3CZlhRHT+wfcNwBP07GAH+sYHR4FnDvK3HNj6ICae3LW38OoLZS7NzkNgvI6ASLqHLcQQAOgogPlqoP2lsxzB0uq+Wf5zTYymeB/xwjt6AXH7+duaoLnZW4YR2MqFMxMhfJjzfafBoyMVE4VzIFLx7aw3kyHy0MHJ+oZgw6cbSYkOqBBya6QfrhwzukmRV5BdU5b5WOb+o+33qkA6KFgmgdgFCx26a7F/GXGwSsC70dbwojSO2ahfXAznkoovPRdv+ELPsX3NWiYYhvMXXLHnZV7cUwQbWrBEBJvQUW7357kCIJmql/qlbW5zm+tVog50Io01DLRL4ALDUszgSSHEjpdsiqKmFR7G0s80DCup6TpsEsSKCoH5O5h2W/1wyreKpbpdKIXD58z1imqV1/boDiM4TgezqhSW4VNq3z5c/IjPSIIpunQatOKhdxzdZCsjCxZqNWXYK8IY9qzpze289WV2qbtV8p0VJm8zaHjlpf6JT4Lf4xNX+3FwPGv7gBmixrdUh7F6U7SxmMpJ4ulebZIeegUI/BBiKOBD7Dh9f4Rc+ks42aYvKxCzptdAEDYzenzFsymbVsahuw3uB1Y+mepuIpdxQKXuI22cRl/YbY5An0bE/38PtIx8rFjC8AcY6LEO5c5GSTDlO/N+uEWttJS1Hun/xsDgFkoblIgr6bJ++IqY2k1MQGEmN+RklYqW29MpLiZ+Pd+lH72JVPnHiUyTKn1ldNhosmIwK1H4D5FhRHkNMojpamY3eefkpE2NdWvf8imJKe9JXVxbZxu1gA3sdm0OzMp712dtmx+pQfI5jRv6njkKplxsEzcMfts38a4E0rTk3Kj5L8SZnkpJ5d7cKQxopFfWx+Yl0GYxTBnobtwOy0V6pXpycqFhOerYb7dmEsrG0WRWRz4Vt1qXNwAZUXlFAvGGo64//zSo32MaQCIL/646smjAJVeseBU3VMKJK1e75Ec9u92y4UyL/7uZswxL33ln81bNEtNV7FLwkLL0d7EE76f7bNO+A/9MTjNK3TKoP4Gey3keleOP7LtuLSBw6ZHYX6AIOoVb97Lvuj6WXMCeS1WhBWW6VGBQ4tyKLiSuDOs2tMzaZZ3oQbFM9sS1pntiLjnmVKFTneWjYlgq5xj/McGl0yH/+ssC06Bx9+cgMwOvJmc5MHSRWekCmnNgl1MhKHPLwJwTue0rCkiA6QcQ2n34FRxEZliOjE3M8HDfyoUBQe/2aATqp7VLrnKNVqWYiQtMfF8Pw66vfOjbmdCmJCDzj2HaAHSs4lo25x0LHLYcoko/Bi9wPYvI9ENX/QJNGw2sGPFb4db/FrOvwAk9q8NKHTmT3BVXA3SrpK3qZ8n8V6so8zYbDCMHp6/UvxMCsniuFzTjzjUx153j+DtCDt/Ua0EjHZJ3Dc6hTYtsAqOHFtfh574s777xVVZ2YWgKuOAT+SgR2tYDUNYFgnqi4PKrUdnbr5S7AP8+SB7Pv3i0VljFav0QJOvyl/vh916vVhcNvSaG9n/GgC3Poy2+j2QFHYn96hleUSuOm3IJaQwATesf9jEx0c3LeDvkZWOCwh/cM9h5jQnWO18IqpscO2ddHgGdO7/TVjQ2SA5w1efnmvh+SOiBYlA/wPDA2zjK8O+dR0+shYN5NR1ggN+Gx2MFZBS0lWI+VyEXw0G4/aihYsIL7fI6casHLrMpFfRfJwr9ZQZzKmOhcHJFllx/gy6n2mLX4O+ZlowiY5/OTgruzmlk1+I7NFdA8vSD/JH6SMoYyZfSKz3mdEmFn1mFPKxH9H8c6jJM6YWcSW2O+htnRjc6YRycMxbdx4ZVJY8Vwg4TIPWkWHGYwneFxoCzmDMg2Qx3uFcgtS9bsa6NIzkGnxO7WzslpgjJlb+TMziOnCPO6jvt/UN3KkHPzmiNZTr/O9gMoF2iNuYgQcrRp71JDQngihv9CMAPU4ecge5AJbm5sNb76YnEmsA8ukc3ZMQawf9PRcHXcXWiR38rdLtLHhK+NJeNAS0NU3+X4PdvOhDmzdUlugqFEdhDCwdZLwv9lT7H86Yys11jABstCLjO+dQ6bPG7H8I+uvk+VORruaJZ6exwFjY0KA5mW/jqH/ePWrcjK591jeP/PD8Llrv9ZW9t+BOE4SyydEnp5Ks6VgSwdCJBVyuXk922kmL6EAwMdvsLHq6PMu2Bojf7zCVeX3h/63RFXAY6G58BSj8k2ajWcw4d5oE/KMusBKVqHgQMcPXl/NBB/5euDwfHA9XZvV78I5jH8ahLkSB/sZqVQ1TyGS9Zg/glp3BLdJWROVI5HS8bNZhk657c/aJGJ6fuGsS6hRUpq4afxshRNXJ/SUEULe6gpY31Z2X6GR+JMyVVwljG2hapcA0DFUQdm9J8ft/gmY5c8lWXarfgQ7hUJlOK7B2QCKP/j7pRpWpsfTGq+1s1wCoVAGiXjisWX8/B4p8d45UW6mz16FQrP5PBIyV7e57+d+TGy3iJVkCCE8/awrtTMF+qXZNctKfOvUcUm/qWieFnb5M811fLcp9enEA1WIP4rUZG/pEAv7XNra3EbK9cyIPr4kGwmmDXnU/w1WgYI2Yz3klZU4IG5YXEV00gzraA9L06JROci4EQGPCA6vAb1j50EPgurlgoBQYRAEiBu25PaBGHvtx3Qgq1m0AL+aluVzI5Z/wbiQs1oms7tBQBciCD1UKrFddtQJewDS+l401KYgLX8Ep9DqOyK3NyUGEznMak9KrDBkja0TmQwV2LxDcYYpUoLmObPcEzzYF8N9NxaOET/Aw2ZBUVimU5U1a6pJvm9ogmUNh6GDPp4XRGpPdPwnxCK9k5C1NENr/aPqMzFiVZqGxtbiqIYlSqt1hbNRZ2bE0N/yyNfEKWJiYzwprb++OurfOJOncS4d7bVXtL8mXlXxE6L+zERUt1po5Q2n0cRCDquPiXOcW9t63vqvan0223RxZzV1C6qrkWhWtXBN7WBkGR1E8xg48cHsTNiGDji5MdWgcRwH2OZFF4m+nmsNnaiASsECNSP0fYoEo7OX5HQWTeCN2SrhC9IAuCTY9bPnEP7xANwJ0fxWnIphDqreU23ATbE97AL0jsuwmJ9c+U+EahbF+1lNGFmVcPq6YU5RpY429ukkgeiUHJVP3cLvh0VU7rpCXTxWoTmSsoVT/WTQvccfIaqIGtUffKHBAhcw9CyycwEVr8bf0VwYOEIM1YrhdTVejBB6QlS40L08G/OOJM8RCx5QN6FRFx0g8XTw2pdB/B4f3EMfmBzB8vgBfJ+Z0SSZyKKJuc/Zsux/G8cJTXzsYiIRCDT/mLuZUcBBNHJjBIls4GZDsDADT2Rh9QHYAjHZfWkHv9iQR/0oKn8qXQQDOjClDo/zkZM1C+6eFHhiQHhWriCNVBUT5tMhdandF3ZTS/7HeHHrCbLtSdmuTEACQszfdpr7SdrytXN/omKOLmzLooDrTPwZQZPECQ3q/kNAEmEDRkKyRNok4kXVLvaJ/8F5XChtrvGNcgPiQolHvgDVwMZ5OAFJXu1lJegYlcMm8/uCv5rSpRB5V1TCQ2dnUsU5amQ68fL64zd+s9J+qvoYd8zd8pz/dbi2ofokKkwQQWIL75DVAY8UppeN5AoVKHSCUzDPVT8EymQWOLkWXP89sv8d6Fr1YVJGosF1dR6RNrx3bdRLDm8DfPKgG0b6mzvmIMMbVsyAvo6A+sZVVrkZt3P5XLYiqoTRtjHEm2jqdPsMEvyM+ssjm32ilCom4qe3Ee6j92nLR3zun+/q86RM9frX4ThA+0lwuh+btpnl23s7CjWuv+GaZyERG123OR3BxohND5dpZIaQUZsAf65+cvkXUXcS/8IsJmF6LpjrfNxGWA1bcJucBBTumbnpLs2qJgN+v90f+pQ8n3bSBIupWsEnm27xspVLQsx6y9oAqgJCjR6MNO+9rxXRH3kb/qib2SCASYQxpLSRIEmcomJLQMcpXZWtMpKVugZA47a6/4ed3/olk4x0eya6bpWtJSNcHGzPCe1SulKiCofmvdPlCkX9PvE7A6Az1K9vPyTpqzboza/WCLIpYzfmw8CJvZojjQUzK/WPuphWZgX7XhLIoY/z6T02JUd3iDDgJmrmi1tfZED4MP0BsMYYdHoEAJN3g3ne7ryk/ikW8P58D2Vs0cXIHupyO7jrPqT0rqGhDXDdIwU3ylBN24mlv0ZCNviHNSHMO/5XKZh+Fw0pBpA0zc/hZtnRJpy3Y9bql6ibsAd2kUJIOtGLm0BS0tvks4SPkAYwMRYsM+WdBYeFJmsmmID7FVMCJPLuxZHw5SGlCK7kH5SIEagQEIYgJdbseAFMaL/dRz2mnLNo9gCrHmoIWs+lyXrS0cokKxvrgDKnONNQ3E+eT8FbINLEzte60Hf462IlrDUmzyZjTaU34VkKuHgNZGq0kdZROymi9nKnH/pT+wazQ5uFUlsijndqwn4fNikAj/PD3M/rZ5BsKnJc8cH90eEzSpEVRoGY2fu0wbEKtv1kCc7dTBZu1kyPq48EpYeVi/f/GWtQ4bEG/tuHop6pblPdZ9nFWJ+8vwI491RpL9SULGCt13iHdxWwumnKlsglkjCZ/MFA55fOHI7ym3nLU/ob/nrQ0BZqDTy7rNfChv5zQJUB1OOIZ25XG/IN9vL9mPbE0rUstEI4tfy0a/BHAFT0wGp1c3pQrOECjMuWNKjNIi8rB+qKHX4fShpePBfj/5xu7HqjJXokt7O3FPOucGeK+DxeqKo1NN0ZeWH2agzBT3aUrJ5wrMgHx62rIEZEFlZq1Kjgzc706v8QCX1lskwlBHRtCYMhhL27r2vNnG8w7L0NtxSy07UW+lLsa+FLfaYwLCbfofnw8q+9Ij6X+Nob6/mau7BpHN72dtB7xt41ZXz3i4OnWA1wB0V0yUt0UaFRYVf7LRmujZeXGt2UtU/xhBg3pGvlQh6Qae8MQtT5C83mnUA6kmW8lcBukCkpYLOzRgJvLmhJSwAS7EfZ/PbDvgu+FSCGDe79mhUguWTpp+20shB1o5Bb0LkY+yU0rBZvuYCi3+rxMsPNdaBv27a9+fLCwuv9oJPT76cWlDK+Y3CJhSmC5ah8aanjO26b14lPLJOPCSFnKMbfKT4A2IpCdaOlk3odmrDmRA7hTYgYN9TWYI6RPwV/5MuzIb6k8hBSyrBPRkh0ih3Tn+IPxUvTMl5xgrma4wsL8ZPVRGFb6POXns5RT9UL0yjyhIVKBkAOseTBEBRNbMwkHUxLcSEa4XMF5ooIbak6K9Oi9WJ/qX1LdeEyU8idX69u6H2hwVm7KiqqCkOc/Ei7ETNEA+3LNw96I3Qv2CzyZFAo0us9IS9MtLROaQOAqjjFzSFmVSegWckWxUJMo5JuryzpvIE5DjxUfhd9RRVJSaDebg25l3rDbaBT/Yn4mtFRUTONvKUnMXXDV9+WuPqYiSpv++me6dEPcQkiUvc9wkAGv7YcrHT9498CUtCW/E6RQgAEw+9+xJTf7pgm/sAye+E2jrW2pR/lINz2Ju7vUNtcGZ6NgoJMZv+AR2WMauA0x6IgUhy6aBKg7P1NYh1VpspxOt0v05UZhp4ZNRBFUJL90EsjYS3D5mwGN9uxwE6R75iIK0kSrvcUpsSgIUNyd88WXGkNcg3e5e8ivAadu3/pLUN2jBqyMmPmC7XOaD0g1xfov8UrUUFtQ4N3siQjlzSzC2U4CaJYpidfP2v2lAJAuvJ2mkrOZ8Y97byJvZmPqgSi8lAh4NtV0MITfCktXrFtyqUdpOvUz+YY90NoXBvB3LewKD3ZlchvKMwG5OcoNp4GYBZp2HHloLmzgBzMFFFB6gcs+Br4mfyKNHUPheeTtXqVhxMkcfDwuV2SdCxrUefoPj1wInn83VMcHyN5cEYH6frjuVygdrDO2lk2L+DNN9XM+O9G8EWhWxSK/dG4CStTg/u9FuxJlT2yHSVzqQLTu9yRkSUdWqR3FYWkC1SK5/MRlJpjfSm6s02qzWRXFnMlkh4w61+LHM/JtpVQgPJZb2ZHHpR0mtYI1iTpJoDhb66rK70IWJIodWa4e7hOELaqixhEdJH2YvIMzBr97bqqSq2iEIsVgcNplHgyZzV3/tJj18Nxp6cxWRUx7dwTxSwr0SAsgwq6R8tRLKXcuotJhUkTn7e3y6ukgNy6WEk9ML/dR3aGoURBph88Ihamko1/WnT3dqx4RzAemw4Yigi5Jiwr8aKKBHo5sLSOD+tX+iUtjD7yUKLs7J4nngqwYWZj9RJhTz1/7dXDVV+qG5h/G74Ll00YKjQQRUidQckXwB32D/qZBNBjLpbbBsHawjYKA6jWs8AtsipIr+ZdbgiEvgDmJ5SUo7AiDe4ZoY0kiXC+KkywaalHIMCJAlCPrSEcCoviGMvVPXpz4prxobEZ398PsHiCyc+P1fcLpkSMOWd8hjEllYpu56prFTHjQXQbs++mVUyh3p2cWW7EMiUER9khK5gyDbOplJJsQAIFjGb5Lk0dnr/muX78tgfwRiATyxw3DV3uJCRWhBiC5vkjvGjgkfBNz/fBn7JwyV7KvrQYrrQImttXqnuOUoIY+XbEKdwVLLNzck/9vECr/ZmhL3uBUbHOfM/X91t/TGbm7kLjZEedtOmYnlX31hPJJGUzpofOTv+S+nAX1flGUTxjHGj/GEwU+2dE7ArH004zHFL358+mn6KbLWMuUP78/MziEJ9Fm4SFZC03vJxE/nvrj/GSCnC/bubaWG+Ny13v7inAYIztNWlFk5peesdybbu0Gy6qe3KBWpu1zrMVgZtBJUrOU2sSIjcLrNsscA19+mFhTlYrVHbFGQtuA43h5NZZ6g9yhviN8ykjfTfbnPzvO7b7c5xnDznXia7jkTUuqWoCqyEomGiJVOLiN4BJv9K8Z38mXStmTucBlcG1nXuhg1ps5n4v2KaHKn/2CCULn+l5IGbsWxxkeF6mst/tmdnypVbgb4fPxD6E/nTmFPiX/3tcPXzbaGGo9ZH9vR48BO/Cv9bAIXDBmcIUfKKRpCyiETOIj0wYNIt4bS9uxJHax7vUUUs8DRSDHqtnKBssK6xx/eRVrfo1llCXKuAcjgS9kvrT5pQql7mREgzwiqaOXRhDrGPvLQdFR2W+LUixUgwwJP9tJEthB9h/oGRzDE675bE78eFoj3CcBJz5uBX1/a0IsFgiA+dzVXPgdoKivjQjTQqFB+Jjn0ycB3zyTpDP/72ywJo841DQeoJX/AF+W75BYOmZz7OV8nGGzL+NrIQI/GbvuIk/HSnTA9tOEH2De54UqrzWw+QasANpoCTSNCvXjpmbntBKfQYU9g3Id1j53+mLYtak2fCl0gZWXOCYzlwSY+IlyExQ6qhDpgkkI6i1eDh11E4i3lTIaI9Z/tRzv6x5JIElmSeadYOEniaaIipGmqEl8zWn0D/Dc1cwtWPlyuB476GtFOnBKG81L8PoEn8/69Z5DF/XO9/hTSgygSWhguk0T1dvoZe0MRtrFE98JpNfNCFkKRM0NqgqqxLf8vmEshSRvCcHIjI1oFbB8qkKqH93JfY5GSuyfqlnmYAR7afqAeRpSVDqP5eRbuK8pkbnQs6caDH1vzPIiO/JJH5B6zTuDAJj099Ay/KSrlEIMdvbo34mNQYOxxcChwF6v5pl3uouF/sFV60g5Mt9LXbEs/DETUQvk83G6K7/9LOUPRsqvefbaUSRwWzS1uK16gcWfiZZ8JJ3x45oO6Rz5+lBmL6NMylByuZFrAs/GNaLMJvO019y95AwKH365wxHLF/JC+lMQ5RCgv85wE6UoMio5Wr2GiKtpwVRV9LUMhtSIh6wCw6s+OZ9vDsJX01nJn2BxMmb6t7oun4PIfuDFVf2mBjrZkijS62FckDuN5ei0YWGrgl/7RmppdU9NTxXw3k9cVkX88Hk8LfaqCrcznc0K4urJJMa+Cth2hZVHzQHvstMKyf9Ql87gmqZ4xjNDCb8S4U1ar4kvdu0ZZV4oG3xvBdZpTqxdS4tn5AVjAq4iLnamfTQx9eITabZRrCmzZ4xYd7gnhlL63XqrXeL23Opp8QALHUXWFBh/7/naQaLpHC4SrErYA2H+BxB0smclVBqX2eG7I73ltrufI+i7XjdH+dR74VIsQ5a0i6cnk+FAtbDV1uEag1DupUmiw+elo/TCUm+fwPXEbz99JBUiJdCIOZbgLMvxs/fblx8RWsL1QX2BBpPrXndW88FpcaFjPP7Kt3sxJLFK7K50igWs2OfCSoKSyqKI6Om3Y2WK02N+Ce+HekKafG5Jrgi2cty06zT0EkwVYjd8XE97Pz7Oyevw8tgd7fusIeLJlt1tuUHK1R/eKqXuzK5eAt65lfmSOxZN6+IP4UJuoUqWZAYby50nOUjIeKg2CjssKyjtv5huXdDhRAcxzIKe1MMthEcGmPkXAuAI7R91RkZXIyMNi0yHqteEahTyiAVqxwLSfkrzfMgjNar5/MMHm12wgiWV1TAoUmJdJdfMEFKpLwUhKFEYKurcq2Gy7iLxlIcWd+tdfExKbGr97Ja8X1dPr/LxZEz9MNyp09+OkIKnVxEbhekf0wCpBT914ORTkBLBgAXAxZZbYglOnAZltq6+/96RaauicQyOLPhAzM3VkZaCkhFbMPj8LMzFyGJ0PkIa095zJVE5dAy8SEe+Gut2cn34TIu28/U+x8alNts4cnNyWsMI+3DaHhbsXeCjjTVXw7Ze4X3I6+GxOnpgv+JtfppZPHosmF3dF4hxHPu0+jX1Vqdh/yqLMiqbOeNH6bUy1Mqgf2VVtQy3P0QMQzK7NPh/0H1vGygJRlvAeF2EInZ7OYTz0NjAgu/jTo2PRLMHPOUKc331YutdWtkXmbxwBfaX1t73i5mBEiSkH2GMyzc3aBYJTnFLXUTTnn7UbQ9+OqmMh0Eqko//gqHPYaG4RJqMwT0fHxb+H7X2MSAwfwM9KvOJxvhEMqzG9B+qdoepZQtq3Xa046zHvSUZrwUss/rnjjNEnRcCqTGx1er1h6RCw2/aiEyuY7GCVCnrOLU5Pd4oMGCSRX8T0VMa/wiI9j+6a2NxuvhCPtm7c/fKBbyk5kBekpZgmV4twMQ17U7ttBDtlD/Kdiv4lR0RfvRjQKImT/gFcq6jjrht0bRTWxrR9e6Pg8A/2URqwY+EEQZ7suuV4EscKVhMOEiRqNkzDMvco0z0v6ADY5JGmswl0/nXNQWX6IWw6Vwomp54PKvKxOV4tEgbeNf+hfygvY901Dr4v0EUQchbtK/ZXJvWoLyE2C8FcSe+fK9715CRMErn2MgTJ6rYh+1L83Me1m/vOiSHCJHbc636Ft49vPs4H1dBwC6y72Ru8D4oIWgYZUaj1nO+hmrl02eNQRvKdX9vxV/7H3CXuQ7qFqASO1zpYAw4TwNgtEj/nQvc6saFXRyDwtHdZztlMUdeE3spCaKfie49EA5Auo7mv799fVfZ7AnfJmBAWdCtzQ/BqH27cMeHpEApnwl5nwWwa4VExO8QU4zsue6+hG09C2058QGSUGbA3zNAQ+LRtMSD+1TKqXGTEGCAm0nVP8iFfzXI6hBVRqqSxT3tzVlXmkRcyz8cSSGkFDyWCaKEh+SLVcAqlQ0klE6DvfO2SQ2tMcRF/Z38AMKSWTIsOAAAA=" alt="شعار شركة الحور كلين لخدمات التنظيف"><div><strong>الحور كلين</strong><span>تنظيف المنازل والشقق والفلل في أبها وخميس مشيط</span></div></div>
-    <a class="top-call track-call" href="tel:+966532483014">اتصل بنا</a>
+    <a class="top-call track-call" href="tel:+966575680262">اتصل بنا</a>
   </div>
 </header>
 
@@ -192,8 +202,8 @@
         <span>تنظيف فلل بخميس مشيط</span>
       </div>
       <div class="actions">
-        <a class="btn btn-wa track-wa" href="https://wa.me/966532483014">تواصل عبر الواتساب</a>
-        <a class="btn btn-call track-call" href="tel:+966532483014">اتصل الآن</a>
+        <a class="btn btn-wa track-wa" href="https://wa.me/966575680262?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D9%88%D8%B1%20%D9%83%D9%84%D9%8A%D9%86.">تواصل عبر الواتساب</a>
+        <a class="btn btn-call track-call" href="tel:+966575680262">اتصل الآن</a>
       </div>
     </div>
 
@@ -351,8 +361,8 @@
 <section class="section alt">
   <div class="wrap">
     <div class="cta">
-      <div><h2>احجز شركة تنظيف في أبها أو خميس مشيط</h2><p>تواصل مع الحور كلين على 0532483014 وحدد هل تحتاج تنظيف منزل أو شقة أو فيلا أو مجلس، وساعدنا بتوضيح المساحة ونوع الخدمة المطلوبة.</p></div>
-      <div class="cta-actions"><a class="btn btn-wa track-wa" href="https://wa.me/966532483014">واتساب 0532483014</a><a class="btn btn-call track-call" href="tel:+966532483014">اتصال</a></div>
+      <div><h2>احجز شركة تنظيف في أبها أو خميس مشيط</h2><p>تواصل مع الحور كلين على 0575680262 وحدد هل تحتاج تنظيف منزل أو شقة أو فيلا أو مجلس، وساعدنا بتوضيح المساحة ونوع الخدمة المطلوبة.</p></div>
+      <div class="cta-actions"><a class="btn btn-wa track-wa" href="https://wa.me/966575680262?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D9%88%D8%B1%20%D9%83%D9%84%D9%8A%D9%86.">واتساب 0575680262</a><a class="btn btn-call track-call" href="tel:+966575680262">اتصال</a></div>
     </div>
   </div>
 </section>
@@ -372,7 +382,7 @@
 </main>
 
 <footer>الحور كلين لخدمات تنظيف المنازل والشقق والفلل والمجالس في أبها وخميس مشيط.</footer>
-<div class="sticky"><a class="sticky-wa track-wa" href="https://wa.me/966532483014">تواصل عبر الواتساب</a><a class="sticky-call track-call" href="tel:+966532483014">اتصل بنا</a></div>
+<div class="sticky"><a class="sticky-wa track-wa" href="https://wa.me/966575680262?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D9%88%D8%B1%20%D9%83%D9%84%D9%8A%D9%86.">تواصل عبر الواتساب</a><a class="sticky-call track-call" href="tel:+966575680262">اتصل بنا</a></div>
 
 <script>
 (function(){
